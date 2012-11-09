@@ -12,5 +12,5 @@ exports.index = function(req, res){
 exports.show = function(req, res){
     msgModel.findOne({_id: req.params.id},function(err, sxcmsg){
         res.render('messages/show', { 'title': req.params.id, 'message': sxcmsg });
-    });
+    });  
 };
